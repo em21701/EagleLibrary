@@ -1820,9 +1820,9 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <text x="1.143" y="0" size="1.27" layer="51" ratio="10">1</text>
 </package>
 <package name="SOT-23_POWER">
-<smd name="P$3" x="0" y="0" dx="2.9" dy="2.05" layer="1" stop="no" cream="no"/>
-<smd name="P$1" x="-0.95" y="-2.025" dx="1" dy="1.5" layer="1" stop="no" cream="no"/>
-<smd name="P$2" x="0.95" y="-2.025" dx="1" dy="1.5" layer="1" stop="no" cream="no"/>
+<smd name="P$1" x="0" y="0" dx="2.9" dy="2.05" layer="1" stop="no" cream="no"/>
+<smd name="P$2" x="-0.95" y="-2.025" dx="1" dy="1.5" layer="1" stop="no" cream="no"/>
+<smd name="P$3" x="0.95" y="-2.025" dx="1" dy="1.5" layer="1" stop="no" cream="no"/>
 <rectangle x1="-0.2795" y1="-0.362" x2="0.2795" y2="0.362" layer="29"/>
 <rectangle x1="-1.2295" y1="-2.331" x2="-0.657" y2="-1.607" layer="29"/>
 <rectangle x1="0.657" y1="-2.331" x2="1.2295" y2="-1.607" layer="29"/>
@@ -2726,11 +2726,6 @@ general purpose rectifier, 1 A</description>
 </gates>
 <devices>
 <device name="" package="SOT-23_POWER">
-<connects>
-<connect gate="G$1" pin="D" pad="P$3"/>
-<connect gate="G$1" pin="G" pad="P$1"/>
-<connect gate="G$1" pin="S" pad="P$2"/>
-</connects>
 <technologies>
 <technology name=""/>
 </technologies>
