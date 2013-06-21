@@ -229,7 +229,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <wire x1="-0.3048" y1="2.4384" x2="-1.1684" y2="2.4384" width="0.1524" layer="51"/>
 <wire x1="0.3048" y1="2.4638" x2="-0.3048" y2="2.4384" width="0.1524" layer="51" curve="-180"/>
 <text x="-3.2004" y="1.8034" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
-<text x="-3.2766" y="3.175" size="1.27" layer="51" ratio="6" rot="SR0">&gt;NAME</text>
+<text x="-3.2766" y="3.175" size="1.27" layer="51" ratio="6" rot="SR0">RefDes</text>
 </package>
 </packages>
 <symbols>
