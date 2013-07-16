@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -382,13 +382,12 @@ Source: http://www.lumileds.com/pdfs/AB32.pdf</description>
 </polygon>
 </package>
 <package name="CREE_XP-E">
-<smd name="TH" x="0" y="0" dx="1.3" dy="3.3" layer="1"/>
-<smd name="AN" x="-1.4" y="0" dx="0.5" dy="3.3" layer="1"/>
-<smd name="CT" x="1.4" y="0" dx="0.5" dy="3.3" layer="1"/>
-<wire x1="1.4" y1="0" x2="1.8" y2="0" width="0.5" layer="1"/>
-<wire x1="-1.4" y1="0" x2="-1.8" y2="0" width="0.5" layer="1"/>
-<wire x1="-1.4" y1="-1.3" x2="-1.8" y2="0" width="0.5" layer="1"/>
-<wire x1="-1.8" y1="0" x2="-1.4" y2="1.3" width="0.5" layer="1"/>
+<smd name="TH" x="0" y="0" dx="1.3" dy="3.3" layer="1" thermals="no"/>
+<smd name="AN" x="-1.6" y="0" dx="0.9" dy="0.5" layer="1" thermals="no"/>
+<smd name="CT" x="1.6" y="0" dx="0.9" dy="0.5" layer="1" thermals="no"/>
+<text x="-2.54" y="1.016" size="0.8128" layer="25">+</text>
+<rectangle x1="-1.65" y1="-1.65" x2="-1.15" y2="1.65" layer="1"/>
+<rectangle x1="1.15" y1="-1.65" x2="1.65" y2="1.65" layer="1"/>
 </package>
 </packages>
 <symbols>
@@ -738,6 +737,34 @@ Source: http://www.lumileds.com/pdfs/AB32.pdf</description>
 <connect gate="G$1" pin="A" pad="A A@1"/>
 <connect gate="G$1" pin="C" pad="C C@1"/>
 <connect gate="TH" pin="TH" pad="TH TH@1 TH@2 TH@3 TH@4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="CREE_XP-E" package="CREE_XP-E">
+<connects>
+<connect gate="G$1" pin="A" pad="AN"/>
+<connect gate="G$1" pin="C" pad="CT"/>
+<connect gate="TH" pin="TH" pad="TH"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CREE_XP-E">
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="0"/>
+<gate name="G$2" symbol="THERMAL" x="10.16" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="CREE_XP-E">
+<connects>
+<connect gate="G$1" pin="A" pad="AN"/>
+<connect gate="G$1" pin="C" pad="CT"/>
+<connect gate="G$2" pin="TH" pad="TH"/>
 </connects>
 <technologies>
 <technology name=""/>
