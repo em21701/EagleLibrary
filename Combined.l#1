@@ -237,9 +237,9 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 0603 chip</description>
 <wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
 <wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
-<wire x1="-1.473" y1="0.729" x2="1.727" y2="0.729" width="0.0508" layer="39"/>
-<wire x1="1.727" y1="0.729" x2="1.727" y2="-0.729" width="0.0508" layer="39"/>
-<wire x1="1.727" y1="-0.729" x2="-1.473" y2="-0.729" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="0.729" x2="1.7526" y2="0.729" width="0.0508" layer="39"/>
+<wire x1="1.7526" y1="0.729" x2="1.7526" y2="-0.729" width="0.0508" layer="39"/>
+<wire x1="1.7526" y1="-0.729" x2="-1.473" y2="-0.729" width="0.0508" layer="39"/>
 <wire x1="-1.473" y1="-0.729" x2="-1.473" y2="0.729" width="0.0508" layer="39"/>
 <smd name="1A" x="-0.85" y="0" dx="1" dy="1.1" layer="1"/>
 <smd name="2C" x="0.85" y="0" dx="1" dy="1.1" layer="1"/>
@@ -398,7 +398,7 @@ Source: http://www.lumileds.com/pdfs/AB32.pdf</description>
 <wire x1="7.9375" y1="-5.3975" x2="7.9375" y2="5.3975" width="0.127" layer="25"/>
 <wire x1="7.9375" y1="5.3975" x2="-7.9375" y2="5.3975" width="0.127" layer="25"/>
 <wire x1="-7.9375" y1="5.3975" x2="-7.9375" y2="-5.3975" width="0.127" layer="25"/>
-<hole x="0" y="3.81" drill="3.2"/>
+<rectangle x1="-1.27" y1="2.8448" x2="3.175" y2="5.3848" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -800,9 +800,9 @@ Source: http://www.lumileds.com/pdfs/AB32.pdf</description>
 <devices>
 <device name="" package="TAILLIGHT">
 <connects>
-<connect gate="G$1" pin="H1" pad="H2"/>
-<connect gate="G$1" pin="H2" pad="L1"/>
-<connect gate="G$1" pin="L1" pad="H1"/>
+<connect gate="G$1" pin="H1" pad="H1"/>
+<connect gate="G$1" pin="H2" pad="H2"/>
+<connect gate="G$1" pin="L1" pad="L1"/>
 <connect gate="G$1" pin="L2" pad="L2"/>
 </connects>
 <technologies>
