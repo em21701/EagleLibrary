@@ -237,9 +237,9 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 0603 chip</description>
 <wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
 <wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
-<wire x1="-1.473" y1="0.729" x2="1.727" y2="0.729" width="0.0508" layer="39"/>
-<wire x1="1.727" y1="0.729" x2="1.727" y2="-0.729" width="0.0508" layer="39"/>
-<wire x1="1.727" y1="-0.729" x2="-1.473" y2="-0.729" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="0.729" x2="1.7526" y2="0.729" width="0.0508" layer="39"/>
+<wire x1="1.7526" y1="0.729" x2="1.7526" y2="-0.729" width="0.0508" layer="39"/>
+<wire x1="1.7526" y1="-0.729" x2="-1.473" y2="-0.729" width="0.0508" layer="39"/>
 <wire x1="-1.473" y1="-0.729" x2="-1.473" y2="0.729" width="0.0508" layer="39"/>
 <smd name="1A" x="-0.85" y="0" dx="1" dy="1.1" layer="1"/>
 <smd name="2C" x="0.85" y="0" dx="1" dy="1.1" layer="1"/>

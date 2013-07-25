@@ -399,6 +399,7 @@ Source: http://www.lumileds.com/pdfs/AB32.pdf</description>
 <wire x1="7.9375" y1="5.3975" x2="-7.9375" y2="5.3975" width="0.127" layer="25"/>
 <wire x1="-7.9375" y1="5.3975" x2="-7.9375" y2="-5.3975" width="0.127" layer="25"/>
 <rectangle x1="-1.27" y1="2.8448" x2="3.175" y2="5.3848" layer="21"/>
+<rectangle x1="-3.175" y1="2.8448" x2="1.27" y2="5.3848" layer="22"/>
 </package>
 </packages>
 <symbols>
