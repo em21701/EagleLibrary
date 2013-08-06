@@ -53,6 +53,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="TestPads" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 </layers>
@@ -137,6 +138,7 @@ chip</description>
 </package>
 <package name="TPI_PAD">
 <smd name="P$1" x="0" y="0" dx="0.635" dy="0.635" layer="1" roundness="100" cream="no"/>
+<circle x="0" y="0" radius="0.3175" width="0.127" layer="100"/>
 </package>
 <package name="SOT23-5">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;&lt;p&gt;
@@ -398,7 +400,8 @@ Source: http://www.lumileds.com/pdfs/AB32.pdf</description>
 <wire x1="7.9375" y1="-5.3975" x2="7.9375" y2="5.3975" width="0.127" layer="25"/>
 <wire x1="7.9375" y1="5.3975" x2="-7.9375" y2="5.3975" width="0.127" layer="25"/>
 <wire x1="-7.9375" y1="5.3975" x2="-7.9375" y2="-5.3975" width="0.127" layer="25"/>
-<rectangle x1="-1.27" y1="2.8448" x2="1.27" y2="5.3848" layer="21"/>
+<rectangle x1="-1.27" y1="2.8448" x2="3.175" y2="5.3848" layer="21"/>
+<rectangle x1="-3.175" y1="2.8448" x2="1.27" y2="5.3848" layer="22"/>
 </package>
 </packages>
 <symbols>

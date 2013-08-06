@@ -6,10 +6,10 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -22,7 +22,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -174,7 +174,10 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <smd name="P$3" x="0" y="0" dx="2.9" dy="2.05" layer="1" stop="no" cream="no"/>
 <smd name="P$1" x="-0.95" y="-2.025" dx="1" dy="1.5" layer="1" stop="no" cream="no"/>
 <smd name="P$2" x="0.95" y="-2.025" dx="1" dy="1.5" layer="1" stop="no" cream="no"/>
-<rectangle x1="-0.2795" y1="-0.362" x2="0.2795" y2="0.362" layer="29"/>
+<rectangle x1="-0.2795" y1="-0.362" x2="0.2795" y2="0.362" layer="31"/>
+<rectangle x1="-1.2295" y1="-2.331" x2="-0.657" y2="-1.607" layer="31"/>
+<rectangle x1="0.657" y1="-2.331" x2="1.2295" y2="-1.607" layer="31"/>
+<rectangle x1="-0.2795" y1="-0.362" x2="0.2795" y2="0.362" layer="29" rot="R180"/>
 <rectangle x1="-1.2295" y1="-2.331" x2="-0.657" y2="-1.607" layer="29"/>
 <rectangle x1="0.657" y1="-2.331" x2="1.2295" y2="-1.607" layer="29"/>
 </package>
@@ -388,8 +391,12 @@ Source: http://www.lumileds.com/pdfs/AB32.pdf</description>
 <smd name="AN" x="-1.6" y="0" dx="0.9" dy="0.5" layer="1" thermals="no"/>
 <smd name="CT" x="1.6" y="0" dx="0.9" dy="0.5" layer="1" thermals="no"/>
 <text x="-2.54" y="1.016" size="0.8128" layer="25">+</text>
-<rectangle x1="-1.65" y1="-1.65" x2="-1.15" y2="1.65" layer="1"/>
+<rectangle x1="-1.65" y1="-1.65" x2="-1.15" y2="1.65" layer="31"/>
+<rectangle x1="1.15" y1="-1.65" x2="1.65" y2="1.65" layer="31"/>
+<rectangle x1="-1.75" y1="-1.75" x2="-1.05" y2="1.75" layer="29"/>
 <rectangle x1="1.15" y1="-1.65" x2="1.65" y2="1.65" layer="1"/>
+<rectangle x1="-1.65" y1="-1.65" x2="-1.15" y2="1.65" layer="1"/>
+<rectangle x1="1.05" y1="-1.75" x2="1.75" y2="1.75" layer="29"/>
 </package>
 <package name="TAILLIGHT">
 <smd name="L1" x="-2.8575" y="0" dx="1.905" dy="10.795" layer="1"/>
